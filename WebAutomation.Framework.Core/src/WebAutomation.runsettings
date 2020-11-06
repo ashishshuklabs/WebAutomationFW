@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <TargetPlatform>x64</TargetPlatform>
+  </RunConfiguration>
+  <TestRunParameters>
+    <Parameter name="RS_BrowserName" value="CHROME" />
+    <Parameter name="RS_ServerHost" value="localhost" />
+    <Parameter name="RS_ServerPort" value="4827" />
+    <Parameter name="RS_ServerResource" value="/wd/hub/" />
+    <Parameter name="RS_DeviceGroup" value="" />
+    <Parameter name="RS_LocalExecution" value="false" />
+    <Parameter name="RS_LocalExecutionAsService" value="false" />
+    <Parameter name="RS_DriverServerExePath" value="some local path" />
+    <Parameter name="RS_ImplicitWaitTime" value="0" />
+  </TestRunParameters>
+</RunSettings>

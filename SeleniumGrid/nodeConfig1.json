@@ -1,0 +1,54 @@
+{
+	"capabilities": [
+		{
+			"version": "8.1",
+			"maxInstances": 1,
+			"appium:automationName": "UiAutomator2",
+			"platform": "Android",
+			"DeviceGroup": "Android;Phone;8_1;3ca897e27cf5"
+		},
+		{
+			"browserName": "Chrome",
+			"version": "8.1",
+			"maxInstances": 1,
+			"appium:automationName": "UiAutomator2",
+			"platform": "Android",
+			"DeviceGroup": "Android;Phone;8_1;3ca897e27cf5;chrome"
+		},
+		{
+			"version": "8.1",
+			"maxInstances": 1,
+			"appium:automationName": "UiAutomator2",
+			"platform": "Android",
+			"DeviceGroup": "Android;Phone;8_1;3ca897e27cf5;native"
+		},
+		{
+			"version": "13.6",
+			"maxInstances": 1,
+			"appium:automationName": "XCUITest",
+			"platform": "iOS",
+			"DeviceGroup": "iOS;Tablet;13_6;513a8cc3113d26b35b7da84870bce12582ca9ff9;",
+            "startIWDP":true,
+            "wdaLocalPort":8900
+		}
+	],
+	"configuration": {
+		"cleanUpCycle": 2000,
+		"timeout": 30000,
+		"proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+		"url": "http://10.64.4.178:4725/wd/hub",
+		"host": "10.64.4.178",
+		"port": 4725,
+		"maxSession": 5,
+		"register": true,
+		"registerCycle": 5000,
+		"nodeStatusCheckTimeout": 5000,
+		"nodePolling": 5000,
+		"role": "node",
+		"unregisterIfStillDownAfter": 60000,
+		"downPollingLimit": 2,
+		"hubPort": 4444,
+		"hubHost": "10.64.4.187",
+		"hubProtocol": "http"
+	}
+}

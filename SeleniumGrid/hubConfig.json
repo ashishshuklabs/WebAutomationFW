@@ -1,0 +1,16 @@
+{
+	"_comment": "Configuration for Hub - hubConfig.json",
+	"host": "localhost",
+	"maxSession": 5,
+	"port": 4444,
+	"cleanupCycle": 5000,
+	"timeout": 300000,
+	"newSessionWaitTimeout": -1,
+	"servlets": [],
+	"prioritizer": null,
+	"capabilityMatcher": "com.aderant.DeviceGroupCapabilityMatcher",
+	"throwOnCapabilityNotPresent": false,
+	"nodePolling": 180000,
+	"platform": "WINDOWS",
+	"debug": true
+}
