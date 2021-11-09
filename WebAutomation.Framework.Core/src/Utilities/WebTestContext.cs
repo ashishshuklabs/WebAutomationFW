@@ -73,16 +73,15 @@ namespace WebAutomation.Framework.Core.Utilities {
         }
         
         public static void Dispose() {
-            Dispose(true);
-        }
-
-        protected static void Dispose(bool isNotDisposed) {
-            if(isNotDisposed) {
-                if(properties.ContainsKey(nameof(WebDriver))) {
-                    properties[nameof(WebDriver)] = null;
-                }
-                properties = null;
+            if(properties.ContainsKey(nameof(AderantWebDriver))) {
+                properties[nameof(AderantWebDriver)] = null;
             }
+            if(properties.ContainsKey(Constants.DriverServiceKey)) {
+                AderantDriverService.Dispose();
+                properties[Constants.DriverServiceKey] = null;
+            }
+            properties = null;
+
         }
     }
 }
